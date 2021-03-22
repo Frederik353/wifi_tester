@@ -1,4 +1,4 @@
-# importerer nødvnedige library'er
+# importerer nodvnedige libraryer
 
 import sys
 import os
@@ -27,7 +27,7 @@ async def ping_coroutine(cmd, ip):
    # vent for svar på ping 
    stdout = await running_coroutine.communicate()
 
-   # hvis svar inneholder time to live inkluder ip i liste 
+   # hvis svar inneholder time to live inkluder ip i liste
    # og inkrementer antall enheter funnet
    if "ttl=" in str(stdout).lower():
 
@@ -67,7 +67,7 @@ class Networkscan:
       # kommando som skrives inn i terminal
       self.one_ping_param = "ping -n 1 -l 1 -w 1000 " if platform.system().lower() == "windows" else "ping -c 1 -s 1 -w 1 "
 
-   # funksjon for å skrive inn data i fil
+   # funksjon for å skrive inn data i csv fil
    def write_file(self, filename="speedtest.csv"):
       ret = 0
       now = dt.now()
@@ -86,7 +86,7 @@ class Networkscan:
    def run(self):
       global my_tasks, nbr_host_found, list_of_hosts_found, my_list_of_tasks
 
-      # kjører speedtest
+      # kjorer speedtest
       st = speedtest.Speedtest()
       # lagrer resultater
       # merk download og upload i multithread mode
@@ -126,7 +126,7 @@ class Networkscan:
                cmd = self.one_ping_param + host
                my_tasks.append(ping_coroutine(cmd, host))
 
-         # hvis kjøres på vindows kjør asyncio loop'er med IOCP
+         # hvis kjores på vindows kjor asyncio loop'er med IOCP
          if platform.system().lower() == "windows":
             asyncio.set_event_loop_policy(
             asyncio.WindowsProactorEventLoopPolicy())
