@@ -1,2 +1,3 @@
 Date,Time,Ping (ms),Download (Mbit/s),Upload (Mbit/s),number of hosts online, url, latitude, longitude, location, country, countrycode, ISP, id, host, d, latency 
 22/03/2021,13:01:16,255515729.257431,28587139.01796052,13.902,7,'http://osl.speedtest.as2116.net:8080/speedtest/upload.php', '59.9494', '10.7564', 'Oslo', 'Norway', 'NO', 'Broadnet', '11787', 'osl.speedtest.as2116.net:8080', 11.308836264647057, 9.272
+22/03/2021,18:34:44,241519231.1175106,296519562.95139337,11.085,10,['http://osl-ulv-speedtest1.altibox.net:8080/speedtest/upload.php', '59.9494', '10.7564', 'Oslo', 'Norway', 'NO', 'Altibox AS', '13544', 'osl-ulv-speedtest1.altibox.net:8080', 11.308836264647057, 9.126]
